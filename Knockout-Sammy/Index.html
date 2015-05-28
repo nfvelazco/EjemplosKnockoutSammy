@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Ejemplos</title>
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="css/bootstrap-3.3.4-dist/Bootstrap-js/bootstrap.min.js"></script>
+    <script src="Scripts/Sammy.js"></script>
+    <script src="Scripts/main-sammy.js"></script>
+
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-3.3.4-dist/Bootstrap-css/bootstrap.min.css" rel="stylesheet" />
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-wrap li a').click(function () {
+                var self = $(this);
+                var lista = $('#nav-wrap li');
+                lista.removeClass('active');
+                self.parent().addClass('active');
+            });
+        });
+    </script>
+
+</head>
+<body class="container-fluid">
+
+    <div class="row">
+        <div class="col-xs-12" style="text-align:center"><h2>Ejemplos <b>Knockout.js</b> y <b>Sammy.js</b></h2></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-xs-12">
+            <ul id="nav-wrap" class="nav nav-pills nav-stacked" style="max-width:300px;">
+                <li class="active"><a href="#ejemplo1">Ejemplo 1</a></li>
+                <li><a href="#ejemplo2">Ejemplo 2</a></li>
+                <li><a href="#ejemplo3">Ejemplo 3</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-9 col-xs-12 panel panel-default">
+            <div id="Contenedor" class="panel-body" style="min-height:500px;"></div>
+        </div>
+    </div>
+
+</body>
+</html>
